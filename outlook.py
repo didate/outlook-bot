@@ -7,8 +7,8 @@ messages = inbox.Items
 
 for message in messages:
     if message.Subject =='Workspace ONE UEM Device Activation':
-        token_index = message.body.index('Token: ')
-        token = message.body[token_index+7:token_index+13]
         date = message.ReceivedTime.strftime("%d/%m/%Y")
-        if(date == '22/03/2022'):
+        if(date == '22/03/2022'): 
+            token_index = message.body.index('Token: ')
+            token = message.body[token_index+7:token_index+13]
             print(token)
