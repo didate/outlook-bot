@@ -1,6 +1,4 @@
 import win32com.client
-import csv
-import numpy
 
 outlook = win32com.client.Dispatch("Outlook.Application").GetNamespace("MAPI")
 
